@@ -1,12 +1,14 @@
 import React from 'react';
+import { Footer } from '../components/Footer';
 import { Navbar } from '../components/Navbar';
+import { Layout } from '../templates/Layout';
 
 const IndexPage = () => (
-  <main>
-    <title>duckmouse.no</title>
-    <Navbar />
-    <h1 className='text-3xl font-bold underline'>duckmouse.no</h1>
-  </main>
+  <Layout>
+    <main className='text-center'>
+      <h1 className='text-3xl'>🦆</h1>
+    </main>
+  </Layout>
 );
 
 export default IndexPage;
