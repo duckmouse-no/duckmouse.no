@@ -33,10 +33,16 @@ yarn install
 yarn start
 ```
 
+### Building
+
+```bash
+gatsby build
+```
+
 ### Deploying
 
-Work in progress.
+This project uses Firebase hosting. After configuring Firebase using the `firebase init` command, you can deploy using the following command:
 
-### Hosting
-
-Work in progress.
+```bash
+firebase deploy
+```
