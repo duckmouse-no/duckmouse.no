@@ -1,3 +1,7 @@
-button {
+button.button--primary {
   filter: drop-shadow(4px 4px 0px #0ea5e9);
+}
+
+button.button--inactive {
+  filter: drop-shadow(4px 4px 0px #9ca3af);
 }

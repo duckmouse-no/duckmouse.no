@@ -16,7 +16,8 @@ const IndexPage = () => (
         placeholder='none'
       />
       <h1 className='text-3xl mb-4'>DØKKMOUSE</h1>
-      <Button label='Kjøp' />
+      <Button label='Kjøp' type='inactive' />
+      <p className='mt-4 text-gray-400'>Utsolgt</p>
     </main>
   </Layout>
 );
