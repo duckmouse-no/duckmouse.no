@@ -12,6 +12,7 @@ const IndexPage = () => (
         alt='Duckmouse'
         width={500}
         className='mt-16'
+        placeholder='none'
       />
     </main>
   </Layout>
