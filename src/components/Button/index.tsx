@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-//import "./button.css";
 
 interface ButtonProps {
   label: string;
