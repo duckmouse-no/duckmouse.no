@@ -6,7 +6,14 @@ import favicon from '../images/favicon.png';
 
 export const Layout = ({ children }) => (
   <React.Fragment>
-    <Helmet>
+    <Helmet
+      meta={[
+        {
+          name: 'description',
+          content: 'duckmouse - en veldig tøff datamus',
+        },
+      ]}
+    >
       <meta charSet='utf-8' />
       <title>duckmouse</title>
       <link rel='icon' href={favicon} />

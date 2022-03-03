@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'duckmouse.no',
-    description: 'duckmouse - en veldig t datamus',
+    description: 'duckmouse - en veldig tøff datamus',
     url: 'https://duckmouse.app',
     author: 'duckmouse.no',
     keywords: 'duckmouse, nettbutikk, vipps',
