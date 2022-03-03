@@ -3,3 +3,4 @@ node_modules/
 public
 .firebase/
 .DS_STORE
+firebaseConfig.ts
