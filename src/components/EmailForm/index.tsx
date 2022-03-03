@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/email';
 import { addEmail } from '../../utils/firestore';
+import { Button } from '../Button';
 
 export const EmailForm = () => {
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
@@ -31,7 +32,7 @@ export const EmailForm = () => {
         value={email}
         onChange={handleInput}
       />
-      <button onClick={handleSubmit}>Send inn</button>
+      <Button size='small' label='Send inn' onClick={handleSubmit} />
       <span className='error'>{error}</span>
       {showSuccessMessage && (
         <span className='success'>

@@ -5,12 +5,14 @@ interface ButtonProps {
   label: string;
   size?: 'small' | 'medium' | 'large';
   type?: 'primary' | 'inactive';
+  onClick: () => void;
 }
 
 export const Button = ({
   label,
   size = 'medium',
   type = 'primary',
+  onClick,
 }: ButtonProps) => {
   const [className, setClassName] = useState(getClassName(size, type));
 
@@ -31,6 +33,7 @@ export const Button = ({
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onPointerLeave={handleMouseUp}
+      onClick={onClick}
       className={className}
     >
       {label}
