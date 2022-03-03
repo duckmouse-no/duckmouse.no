@@ -1,19 +1,35 @@
-import React, { useEffect } from 'react';
-import './button.css';
+import React, { useState } from "react";
 
 interface ButtonProps {
   label: string;
-  type?: 'primary' | 'inactive';
+  type?: "primary" | "inactive";
 }
 
-export const Button = ({ label, type = 'primary' }) => {
-  const getClassName = () => {
-    return type === 'primary'
-      ? 'button--primary bg-sky-300 pt-4 pb-4 pl-8 pr-8'
-      : 'button--inactive bg-gray-300 pt-4 pb-4 pl-8 pr-8 cursor-default';
+const getClassName = (type) => {
+  return type === "primary"
+    ? "bg-btnA drop-shadow-btnA mb-4px mr-4px"
+    : "bg-btnI drop-shadow-mdI mb-4px mr-4px cursor-default";
+};
+
+export const Button = ({ label, type = "primary" }) => {
+  const [className, setClassName] = useState(getClassName(type));
+
+  const handleClick = () => {
+    if (type != "inactive") {
+      setClassName("bg-btnA mt-4px ml-4px");
+      setTimeout(
+        () => setClassName("bg-btnA mb-4px mr-4px drop-shadow-btnA"),
+        100
+      );
+    }
   };
 
-  const className = getClassName();
-
-  return <button className={className}>{label}</button>;
+  return (
+    <button
+      onClick={handleClick}
+      className={className + " text-xl pt-4 pb-4 pl-10 pr-10"}
+    >
+      {label}
+    </button>
+  );
 };
