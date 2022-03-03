@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'duckmouse.no',
-    description: 'duckmouse - en veldig t datamus',
+    description: 'duckmouse - en veldig tøff datamus',
     url: 'https://duckmouse.app',
     author: 'duckmouse.no',
     keywords: 'duckmouse, nettbutikk, vipps',
@@ -12,6 +12,13 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://duckmouse.no',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
