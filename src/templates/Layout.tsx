@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Footer } from '../components/Footer';
 import { Navbar } from '../components/Navbar';
-import favicon from '../images/favicon.png';
+import favicon from '../images/ducklogo.png';
 
 export const Layout = ({ children }) => (
   <React.Fragment>
@@ -15,9 +15,10 @@ export const Layout = ({ children }) => (
       ]}
     >
       <meta charSet='utf-8' />
-      <title>duckmouse</title>
+      <title>duckmouse.no</title>
       <link rel='icon' href={favicon} />
     </Helmet>
+    <Navbar />
     {children}
     <Footer />
   </React.Fragment>
