@@ -13,7 +13,7 @@ export const EmailForm = () => {
       addEmail(email);
       setShowSuccessMessage(true);
     } else {
-      setError('Invalid email address');
+      setError('Ugyldig epost adresse');
       setShowSuccessMessage(false);
     }
     setEmail('');
@@ -31,7 +31,7 @@ export const EmailForm = () => {
         <input
           className='email-form mr-4 drop-shadow-btnA text-gray-600 p-2 w-full mb-2 sm:mb-0 sm:w-56'
           type='text'
-          placeholder='_'
+          placeholder='Skriv inn epost_'
           value={email}
           onChange={handleInput}
         />
