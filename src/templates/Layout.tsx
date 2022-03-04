@@ -18,7 +18,6 @@ export const Layout = ({ children }) => (
       <title>duckmouse</title>
       <link rel='icon' href={favicon} />
     </Helmet>
-    <Navbar />
     {children}
     <Footer />
   </React.Fragment>
