@@ -25,7 +25,7 @@ export const EmailForm = () => {
   };
 
   return (
-    <div className='mt-4 px-8'>
+    <div className='mt-8 px-8'>
       <p className='text-gray-800 mb-2'>Meld deg på for å få oppdateringer:</p>
       <div className='flex justify-center flex-col sm:flex-row'>
         <input
