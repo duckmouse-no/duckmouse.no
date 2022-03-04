@@ -2,6 +2,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      screens: {
+        tall: { raw: '(min-height: 600px)' },
+      },
       colors: {
         btnA: '#B3D1F0',
         btnI: '#C2C7CB',
