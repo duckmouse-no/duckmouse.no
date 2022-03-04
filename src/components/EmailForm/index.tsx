@@ -25,19 +25,21 @@ export const EmailForm = () => {
   };
 
   return (
-    <div>
-      <input
-        type='text'
-        placeholder='Enter your email'
-        value={email}
-        onChange={handleInput}
-      />
-      <Button size='small' label='Send inn' onClick={handleSubmit} />
-      <span className='error'>{error}</span>
+    <div className='mt-4 px-8'>
+      <p className='text-gray-800 mb-2'>Meld deg på for å få oppdateringer:</p>
+      <div className='flex justify-center flex-col sm:flex-row'>
+        <input
+          className='email-form mr-4 drop-shadow-btnA text-gray-600 p-2 w-full mb-2 sm:mb-0 sm:w-56'
+          type='text'
+          placeholder='_'
+          value={email}
+          onChange={handleInput}
+        />
+        <Button size='small' label='Send inn' onClick={handleSubmit} />
+      </div>
+      <span className='block mt-4 text-red-800'>{error}</span>
       {showSuccessMessage && (
-        <span className='success'>
-          Thanks, we will let you know when the product is ready!
-        </span>
+        <span className='block mt-4'>Takk, vi holder deg oppdatert!</span>
       )}
     </div>
   );

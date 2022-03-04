@@ -18,7 +18,7 @@ export const Button = ({
 
   const handleMouseDown = () => {
     if (type != 'inactive') {
-      setClassName(className + ' mt-4px ml-4px -mb-4px drop-shadow-none');
+      setClassName(className + ' mt-4px -mb-4px drop-shadow-none');
     }
   };
 
