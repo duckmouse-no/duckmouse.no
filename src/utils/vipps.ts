@@ -3,45 +3,45 @@ const INITIATE_PAYMENT_URL = "https://apitest.vipps.no/ecomm/v2/payments/";
 const TRANSACTION_TEXT = "Håper du får en fin dag! 🌸";
 const PRICE = 30000;
 
-const myHeaders = new Headers();
-myHeaders.append("Content-Type", "application/json");
-myHeaders.append(
+const requestHeaders = new Headers();
+requestHeaders.append("Content-Type", "application/json");
+requestHeaders.append(
   "client_id",
   process.env.VIPPS_CLIENT_ID ? process.env.VIPPS_CLIENT_ID : ""
 );
-myHeaders.append(
+requestHeaders.append(
   "client_secret",
   process.env.VIPPS_CLIENT_SECRET ? process.env.VIPPS_CLIENT_SECRET : ""
 );
-myHeaders.append(
+requestHeaders.append(
   "Ocp-Apim-Subscription-Key",
   process.env.VIPPS_SUBSCRIPTION_KEY ? process.env.VIPPS_SUBSCRIPTION_KEY : ""
 );
-myHeaders.append(
+requestHeaders.append(
   "vipps_system_name",
   process.env.VIPPS_SYSTEM_NAME ? process.env.VIPPS_SYSTEM_NAME : ""
 );
-myHeaders.append(
+requestHeaders.append(
   "vipps_system_version",
   process.env.VIPPS_SYSTEM_VERSION ? process.env.VIPPS_SYSTEM_VERSION : ""
 );
-myHeaders.append(
+requestHeaders.append(
   "vipps_plugin_name",
   process.env.VIPPS_PLUGIN_NAME ? process.env.VIPPS_PLUGIN_NAME : ""
 );
-myHeaders.append(
+requestHeaders.append(
   "vipps_system_plugin_version",
   process.env.VIPPS_SYSTEM_PLUGIN_VERSION
     ? process.env.VIPPS_SYSTEM_PLUGIN_VERSION
     : ""
 );
-myHeaders.append(
+requestHeaders.append(
   "merchantSerialNumber",
   process.env.VIPPS_MERCHANT_SERIAL_NUMBER
     ? process.env.VIPPS_MERCHANT_SERIAL_NUMBER
     : ""
 );
-myHeaders.append(
+requestHeaders.append(
   "fallback",
   process.env.VIPPS_FALLBACK ? process.env.VIPPS_FALLBACK : ""
 );
@@ -49,17 +49,17 @@ myHeaders.append(
 export const getAccessToken = async () => {
   const response = await fetch(ACCESS_TOKEN_URL, {
     method: "POST",
-    headers: myHeaders,
+    headers: requestHeaders,
   });
   const { access_token } = await response.json();
   return access_token;
 };
 
 export const initiatePayment = async (accessToken) => {
-  myHeaders.append("Authorization", `Bearer ${accessToken}`);
+  requestHeaders.append("Authorization", `Bearer ${accessToken}`);
   const response = await fetch(INITIATE_PAYMENT_URL, {
     method: "POST",
-    headers: myHeaders,
+    headers: requestHeaders,
     body: JSON.stringify({
       merchantInfo: {
         authToken: accessToken,
