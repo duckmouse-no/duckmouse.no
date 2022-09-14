@@ -4,3 +4,4 @@ public
 .firebase/
 .DS_STORE
 .env
+.env.development
