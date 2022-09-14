@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy-test": "firebase deploy --only hosting:testduckmouse"
   },
   "dependencies": {
     "dotenv": "^16.0.1",
