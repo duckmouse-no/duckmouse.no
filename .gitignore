@@ -5,3 +5,4 @@ public
 .DS_STORE
 .env
 .env.development
+.env.production
