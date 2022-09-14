@@ -1,30 +1,32 @@
-import React, { useState } from 'react';
-import { getClassName } from './classNameHelper';
+import React, { useState } from "react";
+import { getClassName } from "./classNameHelper";
 
 interface ButtonProps {
   label: string;
-  size?: 'small' | 'medium' | 'large';
-  type?: 'primary' | 'inactive';
+  size?: "s" | "m" | "l" | "xl";
+  type?: "squere" | "round";
+  active?: true | false;
   onClick: () => void;
 }
 
 export const Button = ({
   label,
-  size = 'medium',
-  type = 'primary',
+  size = "m",
+  type = "round",
+  active = true,
   onClick,
 }: ButtonProps) => {
-  const [className, setClassName] = useState(getClassName(size, type));
+  const [className, setClassName] = useState(getClassName(size, type, active));
 
   const handleMouseDown = () => {
-    if (type != 'inactive') {
-      setClassName(className + ' mt-4px -mb-4px drop-shadow-none');
+    if (active) {
+      setClassName(className + " mt-3px -mb-3px drop-shadow-btnC");
     }
   };
 
   const handleMouseUp = () => {
-    if (type != 'inactive') {
-      setClassName(getClassName(size, type));
+    if (active) {
+      setClassName(getClassName(size, type, active));
     }
   };
 

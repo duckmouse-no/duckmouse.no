@@ -2,12 +2,15 @@ import React from "react";
 import logo from "../../images/logo.png";
 
 export const Navbar = () => (
-  <nav className="w-screen pt-3 pb-2 shadow-md flex justify-center">
-    <p className="text-center text-xl flex-initial">duckmouse.no</p>
-    <img
-      className="h-8 rounded-full flex-initial ml-2"
-      src={logo}
-      alt="logo"
-    ></img>
+  <nav className="w-screen pt-2 pb-2 shadow-md flex place-content-evenly">
+    <div className="lg:pl-1/4">
+      <p className="text-center text-xl pt-1 hidden lg:inline">duckmouse.no</p>
+      <img
+        className="h-8 rounded-full lg:ml-2 inline"
+        src={logo}
+        alt="logo"
+      ></img>
+    </div>
+    <p className="text-center text-xl pt-1">Om oss</p>
   </nav>
 );
