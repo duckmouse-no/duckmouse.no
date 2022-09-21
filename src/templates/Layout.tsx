@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Footer } from "../components/Footer";
 import favicon from "../images/logo.png";
+import { Navbar } from "../components/Navbar";
 
 export const Layout = ({ children }) => (
   <React.Fragment>
@@ -17,7 +18,14 @@ export const Layout = ({ children }) => (
       <title>duckmouse.no</title>
       <link rel="icon" href={favicon} />
     </Helmet>
-    {children}
-    <Footer />
+    <div className="flex flex-col h-screen overflow-x-hidden">
+      <div>
+        <Navbar />
+        {children}
+      </div>
+      <div className="mt-auto">
+        <Footer />
+      </div>
+    </div>
   </React.Fragment>
 );
