@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import img1 from "../../images/mouse2.png";
-import img2 from "../../images/logo.png";
-import img3 from "../../images/bg.png";
+import img2 from "../../images/dm2.jpg";
+import img3 from "../../images/dm1.jpg";
 
 interface CaruselProps {
   setShowWire: (boolean) => void;
@@ -17,14 +17,14 @@ export const Carousel = ({ setShowWire }: CaruselProps) => {
 
   const getClassName = (imageIndex: number) => {
     if (imageIndex === selectedImageIndex)
-      return "w-100 h-100 border-btnY hover:border border";
+      return "w-100 h-100 border-btnA border-2 cursor-pointer";
 
-    return "w-100 h-100 border-btnY hover:border";
+    return "w-100 h-100 hover:border-btnA border-2 border-white cursor-pointer";
   };
 
   return (
-    <div className="">
-      <div className="w-350 h-350 m-auto">
+    <div>
+      <div className="w-350 h-[320px] m-auto">
         <img
           src={images[selectedImageIndex].image}
           alt="Preview Image"
@@ -41,11 +41,7 @@ export const Carousel = ({ setShowWire }: CaruselProps) => {
               setShowWire(!i);
             }}
           >
-            <img
-              src={img.image}
-              alt={img.alt}
-              className="h-full m-auto cursor-pointer"
-            />
+            <img src={img.image} alt={img.alt} className="h-full m-auto" />
           </div>
         ))}
       </div>

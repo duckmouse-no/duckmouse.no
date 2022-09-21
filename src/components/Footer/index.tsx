@@ -26,11 +26,13 @@ export const Footer = () => (
     <hr className="mt-14 md:mt-12 mb-4" />
 
     <div className="md:w-750 m-auto text-center sm:text-left">
-      <StaticImage
-        src="../../images/stripe.png"
-        alt="Powered By Stripe"
-        className="w-32"
-      />
+      <a href="https://stripe.com/en-no">
+        <StaticImage
+          src="../../images/stripe.png"
+          alt="Powered By Stripe"
+          className="w-32"
+        />
+      </a>
       <p className="text-xs text-slate-500 mb-1 mt-8 sm:float-right sm:mt-2">
         duckmouse.no / 2022
       </p>
