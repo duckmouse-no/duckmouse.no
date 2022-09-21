@@ -26,7 +26,7 @@ export const EmailForm = () => {
 
   return (
     <div className="h-12">
-      <div className="flex md:justify-center flex-col sm:flex-row">
+      <div className="flex flex-col sm:flex-row">
         <input
           className="email-form h-full mr-4 drop-shadow-btnA text-gray-600 p-2 w-full mb-2 sm:mb-0 sm:w-56 focus:outline-none"
           type="text"
