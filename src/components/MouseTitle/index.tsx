@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import React from "react";
 
 export const MouseTitle = () => (
   <div className="flex flex-col w-full mb-2">
