@@ -28,7 +28,7 @@ const IndexPage = () => (
           placeholder="none"
         />
         <div>
-          <MouseTitle></MouseTitle>
+          <MouseTitle />
           <Button
             label="Kjøp!"
             size="l"
