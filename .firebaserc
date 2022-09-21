@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "duckmouse-no"
-  }
+  },
+  "targets": {
+    "duckmouse-no": {
+      "hosting": {
+        "testduckmouse": [
+          "public"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
