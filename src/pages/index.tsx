@@ -5,7 +5,7 @@ import { Wire } from "../components/Wire";
 import { About } from "../components/About";
 
 const IndexPage = () => {
-  const [showWire, setShowWire] = useState(false);
+  const [showWire, setShowWire] = useState(true);
 
   return (
     <Layout>

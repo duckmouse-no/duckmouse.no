@@ -1,17 +1,16 @@
-import React, { useEffect, useState } from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import React from "react";
 
-export const Desc = () => (
+export const Description = () => (
   <div className="flex flex-col text-left mb-2 m-auto md:m-0">
-    <p>Specs:</p>
-    <div className="flex flex-col ml-3">
-      <p>- blå</p>
-      <p>- 1000 dpi</p>
-      <p>- 3 knapper</p>
-      <p>- skrollehjul</p>
-      <p>- vedlig tøff</p>
-      <p>- 1 meter lang kabel</p>
-      <p>- inneholder en flytende and!</p>
+    <p className="text-md font-bold border-b-btnA border-b-4 w-[94px] mb-2">
+      beskrivelse
+    </p>
+    <div className="flex flex-col font-regular">
+      <p>blå 🐳</p>
+      <p>1000 dpi ⚡️</p>
+      <p>skrollehjul 😵‍💫</p>
+      <p>1 meter lang kabel 🔥</p>
+      <p>gul gummiand 🐤</p>
     </div>
   </div>
 );
