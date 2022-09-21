@@ -10,6 +10,11 @@ export const Navbar = () => (
         </Link>
       </li>
       <li className="text-gray-600">
+        <Link to="/bilder" activeClassName="text-black font-medium">
+          bilder
+        </Link>
+      </li>
+      <li className="text-gray-600">
         <Link to="/om-oss" activeClassName="text-black font-medium">
           om oss
         </Link>
