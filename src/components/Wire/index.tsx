@@ -6,10 +6,10 @@ interface WireProps {
 }
 
 export const Wire = ({ show }: WireProps) => {
-  let className = "m-auto mix-blend-multiply min-h-mouseLG w-1";
+  let className = "m-auto mix-blend-multiply md:min-h-mouseLG min-h-mouse w-1";
 
   if (!show) {
-    className = "m-auto mix-blend-multiply min-h-mouseLG w-1 invisible";
+    className = "m-auto mix-blend-multiply md:min-h-mouseLG min-h-mouse w-1 invisible";
   }
 
   return (

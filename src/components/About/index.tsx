@@ -5,10 +5,10 @@ import { Desc } from "../Desc";
 
 export const About = () => (
   <div className="flex flex-col w-full">
-    <p className="text-6xl">Duckmouse</p>
-    <p className="text-m">Den siste musen du noengang vil trenge.</p>
+    <p className="text-6xl m-auto md:m-0">Duckmouse</p>
+    <p className="text-m m-auto md:m-0">Den siste musen du noengang vil trenge.</p>
 
-    <div className="flex flex-row ">
+    <div className="flex flex-row m-auto md:m-0 md:my-5 my-5">
       <Button
         label="Kjøp!"
         size="l"

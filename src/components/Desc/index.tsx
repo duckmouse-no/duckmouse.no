@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
 export const Desc = () => (
-  <div className="flex flex-col text-left w-full mb-2 mt-5">
+  <div className="flex flex-col text-left mb-2 m-auto md:m-0">
     <p>Specs:</p>
     <div className="flex flex-col ml-3">
       <p>- blå</p>

@@ -17,7 +17,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <main>
-        <div className="w-750 m-auto grid grid-cols-1 md:grid-cols-2">
+        <div className="md:w-750 m-auto grid grid-cols-1 md:grid-cols-2 mb-40">
           <Wire show={visible} />
           <p></p>
           <Carousel callback={setVis} />

@@ -7,8 +7,8 @@ module.exports = {
     },
     minHeight: {
       "1/2": "50vh",
-      mouse: "calc(100vh - 600px)",
-      mouseLG: "calc(100vh - 600px)",
+      mouse: "calc(100vh - 1275px)",
+      mouseLG: "calc(100vh - 890px)",
     },
     extend: {
       screens: {
