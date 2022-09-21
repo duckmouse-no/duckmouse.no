@@ -2,9 +2,16 @@ import React, { useEffect, useState } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
 export const BuyDesc = () => (
-  <div className="flex flex-col  text-center w-full mt-10 mb-4">
-    <p className="text-3xl lg:text-5xl mb-1">Duckmouse</p>
-    <p className=" text-slate-500">Den siste musen du noengang vil trenge.</p>
-    <p>300,-</p>
+  <div className="flex flex-col text-left w-full mb-2 mt-5 ml-5">
+    <p>Specs:</p>
+    <div className="flex flex-col ml-5">
+      <p>- har dpi</p>
+      <p>- fungerer</p>
+      <p>- bla</p>
+      <p>- bla</p>
+      <p>- bla</p>
+      <p>- bla</p>
+      <p>- bla</p>
+    </div>
   </div>
 );

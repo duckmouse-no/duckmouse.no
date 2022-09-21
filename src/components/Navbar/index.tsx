@@ -11,6 +11,6 @@ export const Navbar = () => (
         alt="logo"
       ></img>
     </div>
-    <p className="text-center text-xl pt-1">Om oss</p>
+    <p className="text-center text-slate-500 text-xl pt-1">Om oss</p>
   </nav>
 );

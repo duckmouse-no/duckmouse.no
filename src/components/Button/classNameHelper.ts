@@ -6,13 +6,13 @@ export const getClassName = (
   let className = '';
 
   if (size === 's') {
-    className += 'py-2 px-4';
+    className += 'py-2 px-8';
   } else if (size === 'm') {
-    className += 'text-lg py-4 px-8';
-  } else if (size === 'l') {
     className += 'text-lg py-4 px-10';
+  } else if (size === 'l') {
+    className += 'text-lg py-4 px-14';
   }  else if (size === 'xl') {
-    className += 'text-2xl py-5 px-16';
+    className += 'text-2xl py-5 px-18';
   }
 
   if (type === 'round') {
