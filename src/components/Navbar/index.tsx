@@ -11,7 +11,7 @@ export const Navbar = () => (
         <Link to="/om-oss">om oss</Link>
       </li>
       <li className="text-gray-600">
-        <Link to="/om-oss">faq</Link>
+        <Link to="/faq">faq</Link>
       </li>
     </ul>
   </nav>
