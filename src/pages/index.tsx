@@ -34,7 +34,9 @@ const IndexPage = () => (
             size="l"
             type="round"
             active={true}
-            onClick={() => alert("test")}
+            onClick={() =>
+              location.replace("http://46.101.120.64/create-checkout-session")
+            }
           ></Button>
           <BuyDesc></BuyDesc>
         </div>
