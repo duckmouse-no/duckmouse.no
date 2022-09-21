@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import img1 from "../../images/mouse2.png";
-import img2 from "../../images/logo.png";
-import img3 from "../../images/bg.png";
+import img2 from "../../images/dm2.jpg";
+import img3 from "../../images/dm1.jpg";
 
 interface CaruselProps {
   setShowWire: (boolean) => void;
