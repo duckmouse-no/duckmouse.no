@@ -2,7 +2,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 
 export const Hero = () => (
-  <nav className="w-screen py-2 border-b-2 border-black h-48 flex relative">
+  <nav className="w-screen py-2 border-b-2 h-48 flex relative">
     <StaticImage
       src="../../images/header2.jpg"
       alt="Dam"

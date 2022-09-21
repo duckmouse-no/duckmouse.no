@@ -10,7 +10,7 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav className="w-screen py-4 border-b-2 flex place-content-evenly">
+    <nav className="w-screen py-4 shadow-md flex place-content-evenly">
       <ul className="flex flex-row gap-8">
         <li
           className={
