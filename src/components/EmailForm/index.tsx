@@ -25,19 +25,16 @@ export const EmailForm = () => {
   };
 
   return (
-    <div className="mt-8 px-8">
-      <p className="text-gray-800 mb-2 m-auto sm:max-w-[338px] text-left">
-        Meld deg på for å bli varlset når butikken åpner:
-      </p>
-      <div className="flex justify-center flex-col sm:flex-row">
+    <div className="h-12">
+      <div className="flex md:justify-center flex-col sm:flex-row">
         <input
-          className="email-form mr-4 drop-shadow-btnA text-gray-600 p-2 w-full mb-2 sm:mb-0 sm:w-56"
+          className="email-form h-full mr-4 drop-shadow-btnA text-gray-600 p-2 w-full mb-2 sm:mb-0 sm:w-56 focus:outline-none"
           type="text"
           placeholder="Skriv inn epost_"
           value={email}
           onChange={handleInput}
         />
-        <Button size="small" label="Send inn" onClick={handleSubmit} />
+        <Button size="s" label="Send" type="squere" onClick={handleSubmit} />
       </div>
       <span className="block mt-4 text-red-800">{error}</span>
       {showSuccessMessage && (
