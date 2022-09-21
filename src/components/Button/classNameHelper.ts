@@ -20,7 +20,7 @@ export const getClassName = (
   }
 
   if (active) {
-    className += ' bg-btnA drop-shadow-btnA';
+    className += ' bg-btnA drop-shadow-btnY';
   } else if (!active) {
     className += ' bg-btnI drop-shadow-btnI cursor-default';
   }
