@@ -3,7 +3,7 @@ export const getClassName = (
   type: "squere" | "round",
   active: true | false
 ) => {
-  let className = "";
+  let className = "font-medium ";
 
   if (size === "s") {
     className += "py-2 px-8";
