@@ -1,5 +1,6 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { FadeInSection } from "../components/FadeInSection";
 import { Layout } from "../templates/Layout";
 
 const AboutUsPage = () => (
@@ -14,16 +15,20 @@ const AboutUsPage = () => (
         gjort?
       </p>
       <div className="sm:flex sm:flex-row gap-4">
-        <StaticImage
-          src="../images/dm1.jpg"
-          alt="duckmouse"
-          className="my-2 sm:my-0"
-        />
-        <StaticImage
-          src="../images/dm2.jpg"
-          alt="duckmouse2"
-          className="my-2 sm:my-0"
-        />
+        <FadeInSection>
+          <StaticImage
+            src="../images/dm1.jpg"
+            alt="duckmouse"
+            className="my-2 sm:my-0"
+          />
+        </FadeInSection>
+        <FadeInSection>
+          <StaticImage
+            src="../images/dm2.jpg"
+            alt="duckmouse2"
+            className="my-2 sm:my-0"
+          />
+        </FadeInSection>
       </div>
       <p className="my-4">
         Vi håper du får like mye glede av denne musa som vi gjør.
