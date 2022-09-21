@@ -14,7 +14,7 @@ export const Carousel = ({ callback }: CaruselProps) => {
   const [img, setImg] = useState(0);
 
   const [img1className, setimg1className] = useState(
-    "w-100 h-100 border-btnY hover:border border-b-4"
+    "w-100 h-100 border-btnY hover:border border"
   );
   const [img2className, setimg2className] = useState(
     "w-100 h-100 border-btnY hover:border"
@@ -24,8 +24,8 @@ export const Carousel = ({ callback }: CaruselProps) => {
   );
 
   return (
-    <div>
-      <div className="w-350 h-350">
+    <div className="">
+      <div className="w-350 h-350 m-auto">
         <img
           src={array[img]}
           alt="Duckmouse"
@@ -33,12 +33,12 @@ export const Carousel = ({ callback }: CaruselProps) => {
           placeholder="none"
         />
       </div>
-      <div className="flex felx-row justify-between">
+      <div className="flex felx-row justify-around">
         <div
           className={img1className}
           onClick={() => {
             setImg(0);
-            setimg1className("w-100 h-100 border-btnY hover:border border-b-4");
+            setimg1className("w-100 h-100 border-btnY hover:border border");
             setimg2className("w-100 h-100 border-btnY hover:border");
             setimg3className("w-100 h-100 border-btnY hover:border");
             callback(true);
@@ -56,7 +56,7 @@ export const Carousel = ({ callback }: CaruselProps) => {
           onClick={() => {
             setImg(1);
             setimg1className("w-100 h-100 border-btnY hover:border");
-            setimg2className("w-100 h-100 border-btnY hover:border border-b-4");
+            setimg2className("w-100 h-100 border-btnY hover:border border");
             setimg3className("w-100 h-100 border-btnY hover:border");
             callback(false);
           }}
@@ -74,7 +74,7 @@ export const Carousel = ({ callback }: CaruselProps) => {
             setImg(2);
             setimg1className("w-100 h-100 border-btnY hover:border");
             setimg2className("w-100 h-100 border-btnY hover:border");
-            setimg3className("w-100 h-100 border-btnY hover:border border-b-4");
+            setimg3className("w-100 h-100 border-btnY hover:border border");
             callback(false);
           }}
         >
