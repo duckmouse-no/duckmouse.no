@@ -10,9 +10,9 @@ export const Hero = () => (
     />
     <div className="m-auto">
       <StaticImage
-        src="../../images/logo.png"
+        src="../../images/dm-qual.png"
         alt="logo"
-        class="rounded-full"
+        class="rounded-full w-32"
       />
     </div>
   </nav>
