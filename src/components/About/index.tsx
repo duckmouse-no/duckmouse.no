@@ -4,12 +4,12 @@ import { Description } from "../Desc";
 
 export const About = () => (
   <div className="flex flex-col w-full">
-    <p className="text-2xl m-auto md:m-0 font-bold">duckmouse</p>
-    <p className="text-m italic font-medium my-2">
+    <p className="text-2xl m-auto md:m-0 font-bold mt-8">duckmouse</p>
+    <p className="text-m italic font-medium my-2 m-auto md:m-0">
       click clack quack quack! 🐤
     </p>
 
-    <p className="font-bold">300,-</p>
+    <p className="font-bold m-auto md:m-0">300,-</p>
 
     <div className="flex flex-row m-auto md:m-0 md:my-5 my-5">
       <Button
