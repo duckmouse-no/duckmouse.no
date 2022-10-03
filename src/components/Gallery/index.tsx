@@ -8,35 +8,35 @@ export const Gallery = () => (
     <div className="md:flex md:flex-row md:flex-wrap md:gap-4">
       <FadeInSection>
         <StaticImage
-          src="../../images/dm2.jpg"
+          src="../../images/cracked3.png"
           alt="dm1"
           className="my-2 w-full h-64"
         />
       </FadeInSection>
       <FadeInSection>
         <StaticImage
-          src="../../images/dm2.jpg"
+          src="../../images/img2.png"
           alt="dm1"
           className="my-2 md:w-[224px]"
         />
       </FadeInSection>
       <FadeInSection>
         <StaticImage
-          src="../../images/dm2.jpg"
+          src="../../images/img1.png"
           alt="dm1"
           className="my-2 md:w-[224px]"
         />
       </FadeInSection>
       <FadeInSection>
         <StaticImage
-          src="../../images/dm2.jpg"
+          src="../../images/cracked6.png"
           alt="dm1"
           className="my-2 md:w-[224px]"
         />
       </FadeInSection>
       <FadeInSection>
         <StaticImage
-          src="../../images/dm2.jpg"
+          src="../../images/cracked5.png"
           alt="dm1"
           className="mt-2 mb-16 w-full h-64"
         />
