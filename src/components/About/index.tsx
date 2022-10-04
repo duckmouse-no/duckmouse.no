@@ -9,7 +9,7 @@ export const About = () => (
       click clack quack quack! 🐤
     </p>
 
-    <p className="font-bold m-auto md:m-0">300,-</p>
+    <p className="font-bold m-auto md:m-0">199,-</p>
 
     <div className="flex flex-row m-auto md:m-0 md:my-5 my-5">
       <Button
