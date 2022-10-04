@@ -15,9 +15,6 @@ const FaqPage = () => (
       <p className="mt-4 mb-2 font-bold">Er det en god datamus?</p>
       <p>Den ser i hvert fall veldig kul ut.</p>
 
-      <p className="mt-4 mb-2 font-bold">Har dere laget musa selv?</p>
-      <p>Nei, vi har importert musa fra Kina.</p>
-
       <p className="mt-4 mb-2 font-bold">Hvor kan jeg hente den?</p>
       <p className="mb-8">
         Musa kan hentes på enten Lademoen, Singsaker eller Gløshaugen etter

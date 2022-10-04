@@ -6,6 +6,7 @@ export const Hero = () => (
     <StaticImage
       src="../../images/header2.jpg"
       alt="Dam"
+      style={{ position: "absolute" }}
       className="w-full h-full absolute top-0 left-0 z-0"
     />
     <div className="m-auto">
