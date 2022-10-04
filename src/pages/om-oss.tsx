@@ -8,17 +8,17 @@ const AboutUsPage = () => (
     <main className="px-8 md:w-750 md:m-auto">
       <h1 className="text-2xl font-bold mt-8">Om Oss</h1>
       <p className="my-4">
-        For rundt 3 år siden skjedde det noe kjempestort. Isak Solheim fant den
-        kuleste pc-musen noen noensinne hadde funnet. Nemlig duckmouse. På en
-        obskur nettside langt ned i darkweb, så langt at du blir nødt til å
-        trykke på google sin andre fane var det noen som solgte en pc mus. Denne
-        pc musen hadde et kammer og i kammeret var det en badeand. Det var da
-        Isak innså fremtiden. Han skjønte med en gang at dette var musen som kom
-        til å revolusjonere alt.
+        For rundt 3 år siden skjedde det noe kjempestort. Isak fant den kuleste
+        pc-musen noen noensinne hadde funnet. Nemlig duckmouse. På en obskur
+        nettside langt ned i darkweb, så langt at du blir nødt til å trykke på
+        google sin andre fane var det noen som solgte en pc mus. Denne pc musen
+        hadde et kammer og i kammeret var det en badeand. Det var da Isak innså
+        fremtiden. Han skjønte med en gang at dette var musen som kom til å
+        revolusjonere alt.
       </p>
       <p className="my-4">
         Det var kun et problem. Musen var utsolgt for flere år siden. Med
-        reverse image search og andre hackermetoder fant Isak andre som også
+        reverse image search og andre hackemetoder fant Isak andre som også
         hadde solgt musen, men også disse var utsolgt. Etter mange måneder med
         søking og researching var ble det konkludert at duckmouse var fortiden
         til.
@@ -31,7 +31,7 @@ const AboutUsPage = () => (
       </p>
       <p className="my-4">
         Nå 3 år seinere etter å ha snakket med de gamle produsentene, laget en
-        nettbutikk, fikset innpakning og brukt tullete mye penger har Gerhard og
+        nettbutikk, fikset innpakning og brukt tullete mye tid har Gerhard og
         Isak begynt å selge det legendariske siste partiet med duckmouse! Vi er
         nå avhengige av at DERE gjør deres del og kjøper en før vi går tomme.
         Dette er jo DUGNAD!
