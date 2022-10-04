@@ -20,7 +20,7 @@ module.exports = {
         btnY: "#FFF900",
       },
       dropShadow: {
-        btnA: "4px 4px 0px #9CBAD9",
+        btnA: "4px 4px 0px #00FFF4",
         btnC: "1px 1px 0px #9CBAD9",
         btnI: "4px 4px 0px #979DA4",
         btnY: "4px 4px 0px #FFFF37",
