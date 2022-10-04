@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import img1 from "../../images/mouse2.png";
-import img2 from "../../images/dm2.jpg";
-import img3 from "../../images/dm1.jpg";
+import img1 from "../../images/test3.png";
+import img2 from "../../images/test2.png";
+import img3 from "../../images/test4.png";
 
 interface CaruselProps {
   setShowWire: (boolean) => void;
@@ -24,11 +24,11 @@ export const Carousel = ({ setShowWire }: CaruselProps) => {
 
   return (
     <div>
-      <div className="w-350 h-[320px] m-auto">
+      <div className="w-350 h-[320px] m-auto pb-4 px-4 -mt-1">
         <img
           src={images[selectedImageIndex].image}
           alt="Preview Image"
-          className="w-150 m-auto mt-0"
+          className="h-full m-auto mt-0"
         />
       </div>
       <div className="flex felx-row justify-around">
