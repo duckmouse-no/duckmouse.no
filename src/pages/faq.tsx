@@ -20,7 +20,12 @@ const FaqPage = () => (
 
       <p className="mt-4 mb-2 font-bold">Hvor kan jeg hente den?</p>
       <p className="mb-8">
-        Musa kan hentes på enten Lademoen, Singsaker eller Gløshaugen.
+        Musa kan hentes på enten Lademoen, Singsaker eller Gløshaugen etter
+        avtale med{" "}
+        <a href="mailto:duckmousemail@gmail.com" className="text-blue-700">
+          duckmousemail@gmail.com
+        </a>
+        .
       </p>
     </main>
   </Layout>
