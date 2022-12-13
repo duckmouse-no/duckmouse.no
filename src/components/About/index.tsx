@@ -18,7 +18,7 @@ export const About = () => (
         type="squere"
         active
         onClick={() =>
-          location.replace("http://46.101.120.64/create-checkout-session")
+          location.replace("http://duckend.isaks.cloud/create-checkout-session")
         }
       ></Button>
     </div>
