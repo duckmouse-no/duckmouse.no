@@ -12,15 +12,7 @@ export const About = () => (
     <p className="font-bold m-auto md:m-0">199,-</p>
 
     <div className="flex flex-row m-auto md:m-0 md:my-5 my-5">
-      <Button
-        label="Kjøp"
-        size="l"
-        type="squere"
-        active
-        onClick={() =>
-          location.replace("http://duckend.isaks.cloud/create-checkout-session")
-        }
-      ></Button>
+      <p>❤️</p>
     </div>
 
     <Description />
